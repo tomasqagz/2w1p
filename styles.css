@@ -1,0 +1,10 @@
+*{
+    margin:3px;
+    padding: 3px;
+
+}
+
+#texto{
+    background-color: aqua;
+    text-align: center;
+}
