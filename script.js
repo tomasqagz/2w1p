@@ -1,20 +1,17 @@
 function myFunction() {
     let u = document.getElementById("user").value;
-    let p = document.getElementById("pass").value;
-    document.getElementById('texto').innerHTML=' texto de prueba 1233 '+ u +' prueba de texto 12341234 '+ p ;
     
+    document.getElementById('texto').innerHTML=' Usuario : ' + u + "<br>" + ' Contraseña: casino1 ' 
 }
 
-function copyDivToClipboard() {
+function copyDivToClipboard(id) {
     var range = document.createRange();
-    range.selectNode(document.getElementById("texto"));
+    range.selectNode(document.getElementById(id));
     window.getSelection().removeAllRanges(); // clear current selection
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
-
-    alert("copiaste el texto")
-   }
+}
 
 
 
