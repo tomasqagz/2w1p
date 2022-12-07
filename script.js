@@ -11,7 +11,15 @@ function copyDivToClipboard(id) {
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
+
+    alert("Texto copiado correctamente")
 }
 
 
-
+var input = document.getElementById("user");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("input").click();
+    }
+});
