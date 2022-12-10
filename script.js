@@ -29,3 +29,21 @@ input.addEventListener("keyup", function(event) {
         document.getElementById("input").click();
     }
 });
+
+
+var input2 = document.getElementById("cbu");
+input2.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("input").click();
+    }
+});
+
+
+var input3 = document.getElementById("monto");
+input3.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("input").click();
+    }
+});
