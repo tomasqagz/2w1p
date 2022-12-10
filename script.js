@@ -1,7 +1,14 @@
 function myFunction() {
     let u = document.getElementById("user").value;
+    let c = document.getElementById("cbu").value;
+    let m = document.getElementById("monto").value;
     
-    document.getElementById('texto').innerHTML=' Usuario : ' + u + "<br>" + ' Contraseña: casino1 ' 
+    document.getElementById('texto').innerHTML= 
+    'User: ' + u + "<br>" +
+    ' Retiro fichas ✅'+ "<br>" +
+    " Envio dinero ✅ " + "<br>" +
+    " Monto : $" + m + "<br>" +
+    " CBU : " + c
 }
 
 function copyDivToClipboard(id) {
@@ -12,7 +19,6 @@ function copyDivToClipboard(id) {
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
 
-    alert("Texto copiado correctamente")
 }
 
 
